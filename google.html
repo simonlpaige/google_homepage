@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8">
     <title>Google</title>
-    <link rel="stylesheet" href="styles/reset.css">
+    <!-- link rel="stylesheet" href="styles/reset.css" -->
     <link rel="stylesheet" href="styles/main.css">
     <link href="http://www.google.com/images/branding/product/ico/googleg_lodp.ico" rel="shortcut icon">
   </head>
@@ -27,14 +27,17 @@
       <div class="logo">
         <img alt="google" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" title="googlelogo" width="272" height="92">
       </div>
-        <form action ="#" method="Get" class="searchForm">
-              <input class="search" type="text"></input>
-              <span id="mic" title="Search By Voice"></span>
-              <div class="buttons">
-                <div class="searchButton"></div>
-                <div class="imFeelingLucky"></div>
-              </div>
-        </form>
+            <div class="search">
+                <input maxlength="2048" name="q" autocomplete="off" title="Search" value="" aria-label="Search" aria-haspopup="false" role="combobox" aria-autocomplete="list" style="border: medium none; padding: 0px; margin: 0px; height: auto; width: 100%; background: transparent url(&quot;data:image/gif;base64,R0lGODlhAQABAID/AMDAwAAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw%3D%3D&quot;) repeat scroll 0% 0%; position: absolute; z-index: 6; left: 0px; outline: medium none currentcolor;" dir="ltr" spellcheck="false" type="text">
+                <img class="mic" src="assets/mic.png"></img>
+            </div>
+            <span id="mic" title="Search By Voice"></span>
+            <center>
+
+              <input value="Google Search" class="searchButton" aria-label="Google Search" type="submit" name="Google Search"></input>
+              <input value="Im feeling lucky" class="searchButton" aria-label="Im feeling lucky" type="submit"></input>
+
+          </center>
     </div>
     <footer>
       <a href="/advertising/">Advertising</a>
